@@ -6,12 +6,13 @@ import sys
 
 def upToFir():
     # 打印传递过来的参数数组长度，便于校验
-    print len(sys.argv)
+    print(len(sys.argv))
     upUrl = sys.argv[1]
     appName = sys.argv[2]
     bundleId = sys.argv[3]
     verName = sys.argv[4]
     apiToken = sys.argv[5]
+    print (apiToken)
     iconPath = sys.argv[6]
     apkPath = sys.argv[7]
     buildNumber = sys.argv[8]
@@ -36,11 +37,11 @@ def upToFir():
                  "x:name": appName,
                  "x:version": verName,
                  "x:build": buildNumber,
-                 "x:changelog": changeLog}
+                 "x:changelog": changeLog.encode("utf-8")}
         req = requests.post(url=binaryDict['upload_url'], files=file, data=param, verify=False)
-        print 'success_apk:' + req.content
+        print(req.status_code)
     except Exception as e:
-        print'error_apk:' + e
+        print('error_apk:' + e)
 
     # 上传logo
     try:
@@ -48,9 +49,9 @@ def upToFir():
         param = {"key": iconDict['key'],
                  'token': iconDict['token']}
         req = requests.post(url=iconDict['upload_url'], files=file, data=param, verify=False)
-        print 'success_icon:' + req.content
+        print(req.status_code)
     except Exception as e:
-        print'error_icon:' + e
+        print('error_icon:' + e)
 
 
 if __name__ == '__main__':
