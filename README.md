@@ -9,7 +9,6 @@ Python 2.X
 ![python2](http://orbm62bsw.bkt.clouddn.com/python2.png)
 
 
-
  Python 3.X
 
  修改.properties编码为UTF-8
