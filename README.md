@@ -1,6 +1,6 @@
 编码问题
 
-上传changelog出现中文乱码的问题，主要是由于Android Studio的.properties文件的的编码以及Python的版本的默认的编码不一致所致，解决方式很简单，下面会介绍，不给过过程却很苦逼。
+上传changelog出现中文乱码的问题，主要是由于Android Studio的.properties文件的的编码以及Python的版本的默认的编码不一致所致，解决方式很简单，下面会介绍，过程却很苦逼。
 
 Python 2.X
 
