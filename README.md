@@ -6,7 +6,7 @@ Python 2.X
 
 修改.properties编码为ASCII
 
-![python2](http://orbm62bsw.bkt.clouddn.com/python2.png)
+![python](http://orbm62bsw.bkt.clouddn.com/python.png)
 
 
  Python 3.X
