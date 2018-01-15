@@ -15,7 +15,7 @@ Python 2.X
  修改.properties编码为UTF-8
 
 
-![python3](http://orbm62bsw.bkt.clouddn.com/python3.X.png)
+
 
 
 填坑之路
