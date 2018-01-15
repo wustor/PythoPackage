@@ -29,4 +29,3 @@ Python 2.X
 ![answer](http://orbm62bsw.bkt.clouddn.com/answer.png)
 
 然后我用postman试了一遍，确实是不会出现问题的，然后想了很久也没想明白，因为编码当时设置的是utf-8，但是我使用的是Python2.X，后来在一位Python大佬的建议下，我换了Python3.X是可以的，不过他告诉我Python2.X的默认编码是ASCII，Python3.X的默认编码是utf-8，然后我就试着把Python2.X对应的Android Stuido的.propertiers改成了ASCII试了一下，果然成功了。
-
