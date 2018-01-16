@@ -18,7 +18,7 @@
 ![python3](http://orbm62bsw.bkt.clouddn.com/python3.png)
 
 ### 注意事项
-修改设置中的.properties文件编码，并不一定能保证改变已经存在的gradle.properties文件编码，所以改完之后查看一下，如果没有成功的话，可以点击下面的切换按钮，如下图，确保编码切换成功，然后在进行上传。
+修改设置中的.properties文件编码，并不一定能保证改变已经存在的gradle.properties文件编码，所以改完之后查看一下，如果没有成功的话，切换到properties文件，可以点击右下面的文件分隔符切换按钮，如下图，确保编码切换成功，然后在进行上传。
 
 ![again](http://orbm62bsw.bkt.clouddn.com/again.png)
 
