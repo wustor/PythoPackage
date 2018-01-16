@@ -6,7 +6,6 @@ import sys
 
 def upToFir():
     # 打印传递过来的参数数组长度，便于校验
-    print(len(sys.argv))
     upUrl = sys.argv[1]
     appName = sys.argv[2]
     bundleId = sys.argv[3]
@@ -17,6 +16,7 @@ def upToFir():
     apkPath = sys.argv[7]
     buildNumber = sys.argv[8]
     changeLog = sys.argv[9]
+    print(apkPath)
     queryData = {'type': 'android', 'bundle_id': bundleId, 'api_token': apiToken}
     iconDict = {}
     binaryDict = {}
@@ -27,7 +27,7 @@ def upToFir():
         iconDict = (json["cert"]["icon"])
         binaryDict = (json["cert"]["binary"])
     except Exception as e:
-        print('query:' + e)
+        print(e.message)
 
     # 上传apk
     try:
@@ -37,11 +37,11 @@ def upToFir():
                  "x:name": appName,
                  "x:version": verName,
                  "x:build": buildNumber,
-                 "x:changelog": changeLog.encode("utf-8")}
+                 "x:changelog": changeLog}
         req = requests.post(url=binaryDict['upload_url'], files=file, data=param, verify=False)
         print(req.status_code)
     except Exception as e:
-        print('error_apk:' + e)
+        print(e.message)
 
     # 上传logo
     try:
@@ -51,7 +51,7 @@ def upToFir():
         req = requests.post(url=iconDict['upload_url'], files=file, data=param, verify=False)
         print(req.status_code)
     except Exception as e:
-        print('error_icon:' + e)
+        print(e.message)
 
 
 if __name__ == '__main__':
