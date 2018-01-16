@@ -22,7 +22,6 @@
 
 ![final](http://orbm62bsw.bkt.clouddn.com/final.png)
 
-
 ## 填坑之路
 
 由于我对Python也不是很熟，所以说来惭愧，我一直自恋地认为自己的代码没有问题，因为我本地的编码是utf-8,
