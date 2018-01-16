@@ -1,6 +1,6 @@
 ## 编码问题
 
-上传changelog出现中文乱码的问题，主要是由于Android Studio的.properties文件的的编码以及Python的版本的默认的编码不一致所致，解决方式很简单，下面会介绍，过程却很苦逼。
+上传changelog出现中文乱码的问题，主要是由于gradle文件的编码跟Python默认的编码不一致导致，由于gradle文件的编码是默认的是跟随系统，大部分都是UTF-8,而且不便于修改，所以我将参数中的中文字段放在gradle.properties中，所以下面的解决方式就是根据这个来的。
 
 ## 解决方案
 
@@ -17,7 +17,10 @@
 
 ![python3](http://orbm62bsw.bkt.clouddn.com/python3.png)
 
+### 注意事项
+修改设置中的.properties文件编码，并不一定能保证改变已经存在的gradle.properties文件编码，所以改完之后查看一下，如果没有成功的话，可以点击下面的切换按钮，如下图，确保编码切换成功，然后在进行上传。
 
+![final](http://orbm62bsw.bkt.clouddn.com/final.png)
 
 
 ## 填坑之路
