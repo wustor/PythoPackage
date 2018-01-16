@@ -20,7 +20,7 @@
 ### 注意事项
 修改设置中的.properties文件编码，并不一定能保证改变已经存在的gradle.properties文件编码，所以改完之后查看一下，如果没有成功的话，可以点击下面的切换按钮，如下图，确保编码切换成功，然后在进行上传。
 
-![final](http://orbm62bsw.bkt.clouddn.com/final.png)
+![again](http://orbm62bsw.bkt.clouddn.com/again.png)
 
 ## 填坑之路
 
