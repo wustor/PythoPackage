@@ -1,12 +1,10 @@
 
 
-[TOC]
-
 ## 上传失败
 
 ### 文件路径
 
-**iconPath**&**apkPath**是否正确
+检查**iconPath**&**apkPath**是否正确
 
 ### Requests库
 
