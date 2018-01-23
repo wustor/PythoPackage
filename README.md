@@ -1,8 +1,42 @@
+
+
+[TOC]
+
+## 上传失败
+
+### 文件路径
+
+**iconPath**&**apkPath**是否正确
+
+### Requests库
+
+检查一下requests库是否安装成功，**有些老板**requests库都没有安装成功就开始上传，肯定是不会成功的，如果采用pip安装，需要科学上网，如果不能科学的上网可以下载离线包进行安装，检查request是否安装成功方式如下：
+
+- 进入Python环境：在Android Studio的命令行中输入python
+
+  ```python
+  Python 2.7.10 (default, Jul 15 2017, 17:16:57) 
+  [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.31)] on darwin
+  Type "help", "copyright", "credits" or "license" for more information.
+  >>> 
+  ```
+
+- 导入requests,输入import requests
+
+  ```java
+  >>> import requests
+  >>> 
+  ```
+
+  说明安装成功，然后就能够成功上传
+
+  ​
+
 ## 编码问题
 
 上传changelog出现中文乱码的问题，主要是由于gradle文件的编码跟Python默认的编码不一致导致，由于gradle文件的编码是默认的是跟随系统，大部分都是UTF-8,而且不便于修改，所以我将参数中的中文字段放在gradle.properties中，所以下面的解决方式就是根据这个来的。
 
-## 解决方案
+
 
 ### Python 2.X
 
